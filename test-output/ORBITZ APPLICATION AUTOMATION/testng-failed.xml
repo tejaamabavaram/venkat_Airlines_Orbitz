@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ORBITZ APPLICATION AUTOMATION]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="Test_Chrome111(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="venkat.journey.tests.FlightBookingSteps">
+        <methods>
+          <include name="testBookingSteps"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- venkat.journey.tests.FlightBookingSteps -->
+    </classes>
+  </test> <!-- Test_Chrome111(failed) -->
+</suite> <!-- Failed suite [ORBITZ APPLICATION AUTOMATION] -->

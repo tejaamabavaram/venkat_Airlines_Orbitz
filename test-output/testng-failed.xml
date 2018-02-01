@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="venkat.journey.generic.CustomListener"/>
+  </listeners>
+  <test name="Test_Firefox(failed)" parallel="none">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="venkat.journey.tests.FlightBookingRoundtripSteps">
+        <methods>
+          <include name="flush"/>
+          <include name="testRoundTripFlightBooking"/>
+          <include name="closeApplication"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="openApplication"/>
+          <include name="createReport"/>
+        </methods>
+      </class> <!-- venkat.journey.tests.FlightBookingRoundtripSteps -->
+      <class name="venkat.journey.tests.FlightBookingOnewaySteps">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- venkat.journey.tests.FlightBookingOnewaySteps -->
+    </classes>
+  </test> <!-- Test_Firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
