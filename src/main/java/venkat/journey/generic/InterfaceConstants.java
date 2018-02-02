@@ -12,4 +12,5 @@ public interface InterfaceConstants {
 	String SUCESS_PHOTOPATH ="C:/Users/venkatarami.reddy/eclipse-workspace/venkat.journey/Sucess_Result_Images/";
 	String FAILURE_PHOTOPATH= "C:/Users/venkatarami.reddy/eclipse-workspace/venkat.journey/Failure_Result_Images/";
 	String REPORT_PATH="./Reports/report.html";
+	
 }
