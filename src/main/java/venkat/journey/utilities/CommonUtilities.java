@@ -26,23 +26,7 @@ public class CommonUtilities {
 		
 	}
 	
-//	public static String getCellValue(String xlpath,String sheet, int r, int c)
-//	{
-//		String value=" ";
-//		try {
-//			Workbook wb=WorkbookFactory.create(new FileInputStream(xlpath));
-//			Sheet sht=wb.getSheet(sheet);
-//			Row row=sht.getRow(r);
-//			Cell cell=row.getCell(c);
-//			value=cell.toString();
-//		}
-//		catch(Exception e)
-//		{
-//			
-//		}
-//		return value;
-//	}
-//	
+	
 	public void windowHandle(WebDriver driver) {
 	
 			Set<String> allWindowHandles = driver.getWindowHandles();

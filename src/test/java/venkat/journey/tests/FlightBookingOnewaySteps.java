@@ -5,16 +5,22 @@ import org.testng.annotations.Test;
 import venkat.journey.generic.BaseTest;
 import venkat.journey.pages.FlightsHomePage;
 import venkat.journey.pages.FlightsSearchResultsPage;
+import venkat.journey.utilities.DataDriven;
 
 
 public class FlightBookingOnewaySteps extends BaseTest {
 	@Test(priority=1)
 	public void testOnewayBookingSteps() 
 	{
+		int rc= DataDriven.getRowCount(XLPATH, "input");
+		for(int i=1;i<=rc;i++) {
+			
+		String source = DataDriven.getCellValue(XLPATH, "input", i, 0);
+		String destination = DataDriven.getCellValue(XLPATH, "input", i, 1);
 		FlightsHomePage homepage = new FlightsHomePage(driver);
 		homepage.selectMenuCategory("Flights");
 		homepage.selectTripType("One way");
-		homepage.selectJourney("Pune","Mumbai");
+		homepage.selectJourney(source,destination);
 		homepage.selectJourneyDate();
 		homepage.selectAdultsCount(2);
 		homepage.selectChildrenCount(2);
@@ -23,10 +29,11 @@ public class FlightBookingOnewaySteps extends BaseTest {
 		FlightsSearchResultsPage resultspage = new FlightsSearchResultsPage(driver);
 		resultspage.selectFilter("Duration (Longest)");
 		resultspage.verifyFlightsList();
-		resultspage.verifyFlightsResultsPage("Pune","Mumbai");
+		//resultspage.verifyFlightsResultsPage(source,destination);
 		resultspage.verifyOneWayTrip();
 		
 		
 	}
 
+}
 }

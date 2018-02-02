@@ -4,15 +4,24 @@ import org.testng.annotations.Test;
 import venkat.journey.generic.BaseTest;
 import venkat.journey.pages.FlightsHomePage;
 import venkat.journey.pages.FlightsSearchResultsPage;
+import venkat.journey.utilities.DataDriven;
 
 public class FlightBookingRoundtripSteps extends BaseTest {
 	@Test(priority=2)
 	public void testRoundTripFlightBooking() 
 	{
+
+		int rc= DataDriven.getRowCount(XLPATH, "input");
+		for(int i=1;i<rc;i++) {
+			
+		String source = DataDriven.getCellValue(XLPATH, "input", i, 0);
+		System.out.println(source);
+		String destination = DataDriven.getCellValue(XLPATH, "input", i, 1);
+		System.out.println(destination);
 		FlightsHomePage homepage = new FlightsHomePage(driver);
 		homepage.selectMenuCategory("Flights");
 		homepage.selectTripType("Roundtrip");
-		homepage.selectJourney("Pune", "Mumbai");
+		homepage.selectJourney(source,destination);
 		homepage.selectRoundTripJourneyDate();
 		homepage.selectAdultsCount(2);
 		homepage.selectChildrenCount(2);
@@ -21,8 +30,9 @@ public class FlightBookingRoundtripSteps extends BaseTest {
 		FlightsSearchResultsPage searchresultspage = new FlightsSearchResultsPage(driver);
 		searchresultspage.selectFilter("Duration (Shortest)");
 		searchresultspage.verifyFlightsList();
-		searchresultspage.verifyFlightsResultsPage("Pune", "Mumbai");
+		//searchresultspage.verifyFlightsResultsPage(source, destination);
 		searchresultspage.verifyRoundTrip();
 	}
 
+}
 }

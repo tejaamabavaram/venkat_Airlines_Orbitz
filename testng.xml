@@ -4,19 +4,19 @@
 <listeners>
 <listener class-name="venkat.journey.generic.CustomListener"/>
 </listeners>
-  <test thread-count="5" name="Test_Firefox">
+  <!-- <test thread-count="5" name="Test_Firefox">
   <parameter name="browser" value="firefox" />
     <classes>
       <class name="venkat.journey.tests.FlightBookingRoundtripSteps"/>
       <class name="venkat.journey.tests.FlightBookingOnewaySteps"/>
     </classes>
-  </test> 
+  </test>  -->
   
   <test thread-count="5" name="Test_Chrome">
   <parameter name="browser" value="chrome" />
     <classes>
       <class name="venkat.journey.tests.FlightBookingRoundtripSteps"/>
-      <class name="venkat.journey.tests.FlightBookingOnewaySteps"/>
+     <class name="venkat.journey.tests.FlightBookingOnewaySteps"/>
     </classes>
   </test> 
 </suite> 

@@ -29,9 +29,9 @@ public class FlightsHomePage  {
 	//Enter source and destination values
 	public void selectJourney(String source , String destination) {
 		driver.findElement(By.id("flight-origin")).sendKeys(source);
-		//driver.findElement(By.id("aria-option-0")).click();
+		driver.findElement(By.id("aria-option-0")).click();
 		driver.findElement(By.id("flight-destination")).sendKeys(destination);
-		//driver.findElement(By.id("aria-option-0")).click();
+		driver.findElement(By.id("aria-option-0")).click();
 	}
 	
 	// Select Date of journey for OnewayTrip
@@ -58,7 +58,7 @@ public class FlightsHomePage  {
 		driver.findElement(By.id("flight-returning")).click();
 		List<WebElement> activeReturnDateList = driver.findElements(By.xpath(
 				"//div[@id='flight-returning-wrapper']/div/div/div[3]/table/tbody//tr//td/button[@class != 'datepicker-cal-date disabled']"));
-		activeReturnDateList.get(2).click();
+		activeReturnDateList.get(1).click();
 		WebElement checkbox = driver.findElement(By.cssSelector("label[id='flexibleDate-label']"));
 		
 		if(!checkbox.isSelected()) {
