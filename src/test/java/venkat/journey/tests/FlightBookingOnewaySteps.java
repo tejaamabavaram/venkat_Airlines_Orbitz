@@ -7,17 +7,17 @@ import venkat.journey.pages.FlightsHomePage;
 import venkat.journey.pages.FlightsSearchResultsPage;
 import venkat.journey.utilities.DataDriven;
 
-@Test(retryAnalyzer=venkat.journey.generic.RetryAnalyzer.class)
+//@Test(retryAnalyzer=venkat.journey.generic.RetryAnalyzer.class)
 public class FlightBookingOnewaySteps extends BaseTest {
-	@Test(priority=1)
+	@Test(priority=1,retryAnalyzer =venkat.journey.generic.RetryAnalyzer.class)
 	public void testOnewayBookingSteps() 
 	{
 		//Data Driven
-		int rc= DataDriven.getRowCount(XLPATH, "input");
+		int rc= DataDriven.getRowCount(XLPATH, "journey");
 		for(int i=1;i<=rc;i++) {
 			
-		String source = DataDriven.getCellValue(XLPATH, "input", i, 0);
-		String destination = DataDriven.getCellValue(XLPATH, "input", i, 1);
+		String source = DataDriven.getCellValue(XLPATH, "journey", i, 0);
+		String destination = DataDriven.getCellValue(XLPATH, "journey", i, 1);
 		FlightsHomePage homepage = new FlightsHomePage(driver);
 		homepage.selectMenuCategory("Flights");
 		homepage.selectTripType("One way");

@@ -5,18 +5,18 @@ import venkat.journey.generic.BaseTest;
 import venkat.journey.pages.FlightsHomePage;
 import venkat.journey.pages.FlightsSearchResultsPage;
 import venkat.journey.utilities.DataDriven;
-@Test(retryAnalyzer=venkat.journey.generic.RetryAnalyzer.class)
+//@Test(retryAnalyzer=venkat.journey.generic.RetryAnalyzer.class)
 public class FlightBookingRoundtripSteps extends BaseTest {
-	@Test(priority=2)
+	@Test(priority=2,retryAnalyzer =venkat.journey.generic.RetryAnalyzer.class )
 	public void testRoundTripFlightBooking() 
 	{
 
-		int rc= DataDriven.getRowCount(XLPATH, "input");
+		int rc= DataDriven.getRowCount(XLPATH, "journey");
 		for(int i=1;i<rc;i++) {
 			
-		String source = DataDriven.getCellValue(XLPATH, "input", i, 0);
+		String source = DataDriven.getCellValue(XLPATH, "journey", i, 0);
 		System.out.println(source);
-		String destination = DataDriven.getCellValue(XLPATH, "input", i, 1);
+		String destination = DataDriven.getCellValue(XLPATH, "journey", i, 1);
 		System.out.println(destination);
 		FlightsHomePage homepage = new FlightsHomePage(driver);
 		homepage.selectMenuCategory("Flights");
