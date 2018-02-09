@@ -31,22 +31,21 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test_Chrome(failed)</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">193.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test_Chrome</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">161.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Test_Chrome(failed) &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">venkat.journey.tests.FlightBookingOnewaySteps</td><td><a href="#m1"><b>testOnewayBookingSteps</b>  </a></td><td class="numi">1</td><td>1518167766385</td><td class="numi">72481</td></tr>
-<tr class="failedeven"><td rowspan="1">venkat.journey.tests.FlightBookingRoundtripSteps</td><td><a href="#m2"><b>testRoundTripFlightBooking</b>  </a></td><td class="numi">1</td><td>1518167865077</td><td class="numi">74491</td></tr>
+<tr><th colspan="4">Test_Chrome &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">venkat.journey.tests.FlightBookingOnewaySteps</td><td><a href="#m1"><b>testOnewayBookingSteps</b>  </a></td><td class="numi">1</td><td>1518188043966</td><td class="numi">37609</td></tr>
+<tr class="failedeven"><td rowspan="1">venkat.journey.tests.FlightBookingRoundtripSteps</td><td><a href="#m2"><b>testRoundTripFlightBooking</b>  </a></td><td class="numi">1</td><td>1518188138624</td><td class="numi">40025</td></tr>
 </table>
-<h1>Test_Chrome(failed)</h1>
-<h2 id="m1">venkat.journey.tests.FlightBookingRoundtripSteps:testRoundTripFlightBooking</h2>
+<h1>Test_Chrome</h1>
+<h2 id="m1">venkat.journey.tests.FlightBookingOnewaySteps:testOnewayBookingSteps</h2>
 <div style="padding-left:3em">
 <h3>Test Messages</h3>
-Total Available flights:0<br/>
-Failed TestCase is:testRoundTripFlightBooking<br/>
+Failed TestCase is:testOnewayBookingSteps<br/>
 <h3>Failure</h3>
-<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Flights&apos;]&quot;}
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@name=&apos;sort&apos;]&quot;}
   (Session info: chrome=64.0.3282.140)
   (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -55,8 +54,8 @@ Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &ap
 System info: host: &apos;VENKAT&apos;, ip: &apos;192.168.0.24&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20-ea&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\lenovo\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}
-Session ID: cec4729843f48fee542d1c955b09bb8c
-*** Element info: {Using=xpath, value=//span[text()=&apos;Flights&apos;]}</p>
+Session ID: b0b905e511e816f89d5810324fb7b637
+*** Element info: {Using=xpath, value=//select[@name=&apos;sort&apos;]}</p>
 sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 <br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -73,18 +72,21 @@ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
 <br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-<br/>at venkat.journey.pages.FlightsHomePage.selectMenuCategory(FlightsHomePage.java:18)
-<br/>at venkat.journey.tests.FlightBookingRoundtripSteps.testRoundTripFlightBooking(FlightBookingRoundtripSteps.java:22)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy13.getTagName(Unknown Source)
+<br/>at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:44)
+<br/>at venkat.journey.pages.FlightsSearchResultsPage.selectFilter(FlightsSearchResultsPage.java:69)
+<br/>at venkat.journey.tests.FlightBookingOnewaySteps.testOnewayBookingSteps(FlightBookingOnewaySteps.java:31)
 <br/>25 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">venkat.journey.tests.FlightBookingOnewaySteps:testOnewayBookingSteps</h2>
+<h2 id="m2">venkat.journey.tests.FlightBookingRoundtripSteps:testRoundTripFlightBooking</h2>
 <div style="padding-left:3em">
 <h3>Test Messages</h3>
-Total Available flights:0<br/>
-Failed TestCase is:testOnewayBookingSteps<br/>
+Failed TestCase is:testRoundTripFlightBooking<br/>
 <h3>Failure</h3>
-<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Flights&apos;]&quot;}
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@name=&apos;sort&apos;]&quot;}
   (Session info: chrome=64.0.3282.140)
   (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -93,8 +95,8 @@ Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &ap
 System info: host: &apos;VENKAT&apos;, ip: &apos;192.168.0.24&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20-ea&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\lenovo\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}
-Session ID: ef57293d895a56aa58a99b2d6d0ff4d0
-*** Element info: {Using=xpath, value=//span[text()=&apos;Flights&apos;]}</p>
+Session ID: a484a31c608ac9ebd31f1ccbcaf02734
+*** Element info: {Using=xpath, value=//select[@name=&apos;sort&apos;]}</p>
 sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 <br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -111,8 +113,12 @@ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
 <br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-<br/>at venkat.journey.pages.FlightsHomePage.selectMenuCategory(FlightsHomePage.java:18)
-<br/>at venkat.journey.tests.FlightBookingOnewaySteps.testOnewayBookingSteps(FlightBookingOnewaySteps.java:21)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy13.getTagName(Unknown Source)
+<br/>at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:44)
+<br/>at venkat.journey.pages.FlightsSearchResultsPage.selectFilter(FlightsSearchResultsPage.java:69)
+<br/>at venkat.journey.tests.FlightBookingRoundtripSteps.testRoundTripFlightBooking(FlightBookingRoundtripSteps.java:31)
 <br/>25 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>

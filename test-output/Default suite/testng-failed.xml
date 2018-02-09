@@ -5,7 +5,8 @@
     <classes>
       <class name="venkat.journey.tests.FlightBookingOnewaySteps">
         <methods>
-          <include name="testBookingSteps"/>
+          <include name="testOnewayBookingSteps"/>
+          <include name="createReport"/>
         </methods>
       </class> <!-- venkat.journey.tests.FlightBookingOnewaySteps -->
     </classes>

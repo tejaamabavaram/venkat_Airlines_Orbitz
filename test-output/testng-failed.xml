@@ -5,16 +5,14 @@
   <listeners>
     <listener class-name="venkat.journey.generic.CustomListener"/>
   </listeners>
-  <test name="Test_Firefox(failed)" parallel="none">
-    <parameter name="browser" value="firefox"/>
+  <test name="Test_Chrome(failed)" parallel="none">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="venkat.journey.tests.FlightBookingRoundtripSteps">
         <methods>
           <include name="flush"/>
           <include name="testRoundTripFlightBooking"/>
           <include name="closeApplication"/>
-          <include name="closeApplication"/>
-          <include name="openApplication"/>
           <include name="openApplication"/>
           <include name="createReport"/>
         </methods>
@@ -22,11 +20,10 @@
       <class name="venkat.journey.tests.FlightBookingOnewaySteps">
         <methods>
           <include name="closeApplication"/>
-          <include name="closeApplication"/>
           <include name="openApplication"/>
-          <include name="openApplication"/>
+          <include name="testOnewayBookingSteps"/>
         </methods>
       </class> <!-- venkat.journey.tests.FlightBookingOnewaySteps -->
     </classes>
-  </test> <!-- Test_Firefox(failed) -->
+  </test> <!-- Test_Chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->
