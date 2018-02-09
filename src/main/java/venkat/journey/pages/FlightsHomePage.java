@@ -57,7 +57,7 @@ public class FlightsHomePage  {
 		driver.findElement(By.id("flight-returning")).click();
 		List<WebElement> activeReturnDateList = driver.findElements(By.xpath(
 				"//div[@id='flight-returning-wrapper']/div/div/div[3]/table/tbody//tr//td/button[@class != 'datepicker-cal-date disabled']"));
-		activeReturnDateList.get(1).click();
+		activeReturnDateList.get(0).click();
 		WebElement checkbox = driver.findElement(By.cssSelector("label[id='flexibleDate-label']"));
 		
 		if(!checkbox.isSelected()) {
