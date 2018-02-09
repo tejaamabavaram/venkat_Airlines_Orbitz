@@ -7,7 +7,7 @@ import venkat.journey.pages.FlightsSearchResultsPage;
 import venkat.journey.utilities.DataDriven;
 //@Test(retryAnalyzer=venkat.journey.generic.RetryAnalyzer.class)
 public class FlightBookingRoundtripSteps extends BaseTest {
-	@Test(priority=2,retryAnalyzer =venkat.journey.generic.RetryAnalyzer.class )
+	@Test(priority=2 )
 	public void testRoundTripFlightBooking() 
 	{
 

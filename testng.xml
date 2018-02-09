@@ -4,6 +4,10 @@
 <listeners>
 <listener class-name="venkat.journey.generic.CustomListener"/>
 </listeners>
+<listeners>
+<listener class-name="venkat.journey.generic.MyAnotationTransformer">
+</listener>
+</listeners>
   <!-- <test thread-count="5" name="Test_Firefox">
   <parameter name="browser" value="firefox" />
     <classes>

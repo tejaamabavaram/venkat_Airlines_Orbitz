@@ -7,9 +7,8 @@ import venkat.journey.pages.FlightsHomePage;
 import venkat.journey.pages.FlightsSearchResultsPage;
 import venkat.journey.utilities.DataDriven;
 
-//@Test(retryAnalyzer=venkat.journey.generic.RetryAnalyzer.class)
 public class FlightBookingOnewaySteps extends BaseTest {
-	@Test(priority=1,retryAnalyzer =venkat.journey.generic.RetryAnalyzer.class)
+	@Test(priority=1)
 	public void testOnewayBookingSteps() 
 	{
 		//Data Driven
