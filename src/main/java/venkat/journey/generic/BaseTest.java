@@ -17,7 +17,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 //@Listeners(CustomListener.class)
-@Test(retryAnalyzer=venkat.journey.generic.RetryAnalyzer.class)
+
 public class BaseTest implements InterfaceConstants {
 	public WebDriver driver;
 	public static ExtentReports report;
