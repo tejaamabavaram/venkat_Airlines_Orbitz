@@ -1,7 +1,6 @@
 package venkat.journey.pages;
 
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -29,9 +28,9 @@ public class FlightsHomePage  {
 	//Enter source and destination values
 	public void selectJourney(String source , String destination) {
 		driver.findElement(By.id("flight-origin")).sendKeys(source);
-		driver.findElement(By.id("aria-option-0")).click();
+		//driver.findElement(By.id("aria-option-0")).click();
 		driver.findElement(By.id("flight-destination")).sendKeys(destination);
-		driver.findElement(By.id("aria-option-0")).click();
+		//driver.findElement(By.id("aria-option-0")).click();
 	}
 	
 	// Select Date of journey for OnewayTrip
