@@ -20,7 +20,7 @@
   <parameter name="browser" value="chrome" />
     <classes>
      <class name="venkat.journey.tests.FlightBookingOnewaySteps"/>
-     <!--  <class name="venkat.journey.tests.FlightBookingRoundtripSteps"/> -->
+      <class name="venkat.journey.tests.FlightBookingRoundtripSteps"/>
     </classes>
   </test> 
 </suite> 
