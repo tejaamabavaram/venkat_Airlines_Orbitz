@@ -27,9 +27,13 @@ public class FlightsHomePage  {
 	
 	//Enter source and destination values
 	public void selectJourney(String source , String destination) {
+		//driver.findElement(By.id("flight-origin")).clear();
 		driver.findElement(By.id("flight-origin")).sendKeys(source);
+		
 		//driver.findElement(By.id("aria-option-0")).click();
+		//
 		driver.findElement(By.id("flight-destination")).sendKeys(destination);
+		//driver.findElement(By.id("flight-origin")).clear();
 		//driver.findElement(By.id("aria-option-0")).click();
 	}
 	
