@@ -19,8 +19,8 @@
   <test thread-count="5" name="Test_Chrome">
   <parameter name="browser" value="chrome" />
     <classes>
-      <class name="venkat.journey.tests.FlightBookingRoundtripSteps"/>
      <class name="venkat.journey.tests.FlightBookingOnewaySteps"/>
+      <class name="venkat.journey.tests.FlightBookingRoundtripSteps"/>
     </classes>
   </test> 
 </suite> 
