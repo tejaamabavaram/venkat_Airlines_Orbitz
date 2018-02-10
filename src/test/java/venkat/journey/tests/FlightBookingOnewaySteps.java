@@ -28,7 +28,7 @@ public class FlightBookingOnewaySteps extends BaseTest {
 		
 		FlightsSearchResultsPage resultspage = new FlightsSearchResultsPage(driver);
 		resultspage.selectFilter("Duration (Longest)");
-		resultspage.verifyFlightsList();
+		//resultspage.verifyFlightsList();
 		//resultspage.verifyFlightsResultsPage(source,destination);
 		resultspage.verifyOneWayTrip();
 		

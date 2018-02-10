@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="4" total="4" passed="0">
   <reporter-output>
+    <line>
+      <![CDATA[Failed TestCase is:testOnewayBookingSteps]]>
+    </line>
+    <line>
+      <![CDATA[Failed TestCase is:testOnewayBookingSteps]]>
+    </line>
+    <line>
+      <![CDATA[Failed TestCase is:testOnewayBookingSteps]]>
+    </line>
+    <line>
+      <![CDATA[Failed TestCase is:testOnewayBookingSteps]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="272171" started-at="2018-02-09T17:18:39Z" finished-at="2018-02-09T17:23:11Z">
+  <suite name="Suite" duration-ms="229749" started-at="2018-02-10T06:02:56Z" finished-at="2018-02-10T06:06:45Z">
     <groups>
     </groups>
-    <test name="Test_Chrome" duration-ms="272171" started-at="2018-02-09T17:18:39Z" finished-at="2018-02-09T17:23:11Z">
+    <test name="Test_Chrome" duration-ms="229749" started-at="2018-02-10T06:02:56Z" finished-at="2018-02-10T06:06:45Z">
       <class name="venkat.journey.tests.FlightBookingOnewaySteps">
-        <test-method status="PASS" signature="createReport()[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@475530b9]" name="createReport" is-config="true" duration-ms="236" started-at="2018-02-09T22:48:39Z" finished-at="2018-02-09T22:48:39Z">
+        <test-method status="PASS" signature="createReport()[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@4c70fda8]" name="createReport" is-config="true" duration-ms="207" started-at="2018-02-10T11:32:55Z" finished-at="2018-02-10T11:32:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@475530b9]" name="openApplication" is-config="true" duration-ms="20537" started-at="2018-02-09T22:48:39Z" finished-at="2018-02-09T22:49:00Z">
+        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@4c70fda8]" name="openApplication" is-config="true" duration-ms="13339" started-at="2018-02-10T11:32:56Z" finished-at="2018-02-10T11:33:09Z">
           <params>
             <param index="0">
               <value>
@@ -22,10 +34,10 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="FAIL" signature="testOnewayBookingSteps()[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@475530b9]" name="testOnewayBookingSteps" duration-ms="38680" started-at="2018-02-09T22:49:00Z" finished-at="2018-02-09T22:49:38Z">
+        <test-method status="FAIL" signature="testOnewayBookingSteps()[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@4c70fda8]" name="testOnewayBookingSteps" duration-ms="40793" started-at="2018-02-10T11:33:09Z" finished-at="2018-02-10T11:33:50Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='sort']"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Flights']"}
   (Session info: chrome=64.0.3282.140)
   (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -34,11 +46,11 @@ Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.35
 System info: host: 'VENKAT', ip: '192.168.0.24', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20-ea'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\lenovo\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}
-Session ID: a3e2fb719243a3f0639a25d2bd7ebf4a
-*** Element info: {Using=xpath, value=//select[@name='sort']}]]>
+Session ID: 170ba53f9ab36cc41f28bf86810c15eb
+*** Element info: {Using=xpath, value=//span[text()='Flights']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='sort']"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Flights']"}
   (Session info: chrome=64.0.3282.140)
   (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -47,8 +59,8 @@ Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.35
 System info: host: 'VENKAT', ip: '192.168.0.24', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20-ea'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\lenovo\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}
-Session ID: a3e2fb719243a3f0639a25d2bd7ebf4a
-*** Element info: {Using=xpath, value=//select[@name='sort']}
+Session ID: 170ba53f9ab36cc41f28bf86810c15eb
+*** Element info: {Using=xpath, value=//span[text()='Flights']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -65,12 +77,8 @@ Session ID: a3e2fb719243a3f0639a25d2bd7ebf4a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.getTagName(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.<init>(Select.java:44)
-	at venkat.journey.pages.FlightsSearchResultsPage.selectFilter(FlightsSearchResultsPage.java:69)
-	at venkat.journey.tests.FlightBookingOnewaySteps.testOnewayBookingSteps(FlightBookingOnewaySteps.java:30)
+	at venkat.journey.pages.FlightsHomePage.selectMenuCategory(FlightsHomePage.java:18)
+	at venkat.journey.tests.FlightBookingOnewaySteps.testOnewayBookingSteps(FlightBookingOnewaySteps.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -84,35 +92,34 @@ Session ID: a3e2fb719243a3f0639a25d2bd7ebf4a
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:744)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
+            <line>
+              <![CDATA[Failed TestCase is:testOnewayBookingSteps]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testOnewayBookingSteps -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@475530b9]" name="closeApplication" is-config="true" duration-ms="949" started-at="2018-02-09T22:49:38Z" finished-at="2018-02-09T22:49:39Z">
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@4c70fda8]" name="closeApplication" is-config="true" duration-ms="969" started-at="2018-02-10T11:33:50Z" finished-at="2018-02-10T11:33:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testOnewayBookingSteps status=FAILURE method=FlightBookingOnewaySteps.testOnewayBookingSteps()[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@475530b9] output={null}]]]>
+                <![CDATA[[TestResult name=testOnewayBookingSteps status=FAILURE method=FlightBookingOnewaySteps.testOnewayBookingSteps()[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@4c70fda8] output=Failed TestCase is:testOnewayBookingSteps]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@475530b9]" name="openApplication" is-config="true" duration-ms="40925" started-at="2018-02-09T22:49:39Z" finished-at="2018-02-09T22:50:20Z">
+        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@4c70fda8]" name="openApplication" is-config="true" duration-ms="15130" started-at="2018-02-10T11:33:51Z" finished-at="2018-02-10T11:34:06Z">
           <params>
             <param index="0">
               <value>
@@ -123,10 +130,10 @@ Session ID: a3e2fb719243a3f0639a25d2bd7ebf4a
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="FAIL" signature="testOnewayBookingSteps()[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@475530b9]" name="testOnewayBookingSteps" duration-ms="39455" started-at="2018-02-09T22:50:20Z" finished-at="2018-02-09T22:51:00Z">
+        <test-method status="FAIL" signature="testOnewayBookingSteps()[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@4c70fda8]" name="testOnewayBookingSteps" duration-ms="41008" started-at="2018-02-10T11:34:06Z" finished-at="2018-02-10T11:34:47Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='sort']"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Flights']"}
   (Session info: chrome=64.0.3282.140)
   (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -135,11 +142,11 @@ Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.35
 System info: host: 'VENKAT', ip: '192.168.0.24', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20-ea'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\lenovo\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}
-Session ID: 39efe6cee3922eff8faf6718cf2c4257
-*** Element info: {Using=xpath, value=//select[@name='sort']}]]>
+Session ID: ed696ca089f3ebc77357db41071cf441
+*** Element info: {Using=xpath, value=//span[text()='Flights']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='sort']"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Flights']"}
   (Session info: chrome=64.0.3282.140)
   (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -148,8 +155,8 @@ Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.35
 System info: host: 'VENKAT', ip: '192.168.0.24', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20-ea'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\lenovo\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}
-Session ID: 39efe6cee3922eff8faf6718cf2c4257
-*** Element info: {Using=xpath, value=//select[@name='sort']}
+Session ID: ed696ca089f3ebc77357db41071cf441
+*** Element info: {Using=xpath, value=//span[text()='Flights']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -166,12 +173,8 @@ Session ID: 39efe6cee3922eff8faf6718cf2c4257
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.getTagName(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.<init>(Select.java:44)
-	at venkat.journey.pages.FlightsSearchResultsPage.selectFilter(FlightsSearchResultsPage.java:69)
-	at venkat.journey.tests.FlightBookingOnewaySteps.testOnewayBookingSteps(FlightBookingOnewaySteps.java:30)
+	at venkat.journey.pages.FlightsHomePage.selectMenuCategory(FlightsHomePage.java:18)
+	at venkat.journey.tests.FlightBookingOnewaySteps.testOnewayBookingSteps(FlightBookingOnewaySteps.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -185,35 +188,34 @@ Session ID: 39efe6cee3922eff8faf6718cf2c4257
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:744)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
+            <line>
+              <![CDATA[Failed TestCase is:testOnewayBookingSteps]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testOnewayBookingSteps -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@475530b9]" name="closeApplication" is-config="true" duration-ms="909" started-at="2018-02-09T22:51:00Z" finished-at="2018-02-09T22:51:01Z">
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@4c70fda8]" name="closeApplication" is-config="true" duration-ms="796" started-at="2018-02-10T11:34:48Z" finished-at="2018-02-10T11:34:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testOnewayBookingSteps status=FAILURE method=FlightBookingOnewaySteps.testOnewayBookingSteps()[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@475530b9] output={null}]]]>
+                <![CDATA[[TestResult name=testOnewayBookingSteps status=FAILURE method=FlightBookingOnewaySteps.testOnewayBookingSteps()[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@4c70fda8] output=Failed TestCase is:testOnewayBookingSteps]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@475530b9]" name="openApplication" is-config="true" duration-ms="21876" started-at="2018-02-09T22:51:01Z" finished-at="2018-02-09T22:51:22Z">
+        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@4c70fda8]" name="openApplication" is-config="true" duration-ms="13830" started-at="2018-02-10T11:34:49Z" finished-at="2018-02-10T11:35:02Z">
           <params>
             <param index="0">
               <value>
@@ -224,10 +226,10 @@ Session ID: 39efe6cee3922eff8faf6718cf2c4257
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="FAIL" signature="testOnewayBookingSteps()[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@475530b9]" name="testOnewayBookingSteps" duration-ms="38340" started-at="2018-02-09T22:51:22Z" finished-at="2018-02-09T22:52:01Z">
+        <test-method status="FAIL" signature="testOnewayBookingSteps()[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@4c70fda8]" name="testOnewayBookingSteps" duration-ms="39564" started-at="2018-02-10T11:35:02Z" finished-at="2018-02-10T11:35:42Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='sort']"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Flights']"}
   (Session info: chrome=64.0.3282.140)
   (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -236,11 +238,11 @@ Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.35
 System info: host: 'VENKAT', ip: '192.168.0.24', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20-ea'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\lenovo\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}
-Session ID: 35cd2ebea9457e902dcc242ae28798df
-*** Element info: {Using=xpath, value=//select[@name='sort']}]]>
+Session ID: b79020a82bb8ff3545a844b8701da1db
+*** Element info: {Using=xpath, value=//span[text()='Flights']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='sort']"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Flights']"}
   (Session info: chrome=64.0.3282.140)
   (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -249,8 +251,8 @@ Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.35
 System info: host: 'VENKAT', ip: '192.168.0.24', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20-ea'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\lenovo\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}
-Session ID: 35cd2ebea9457e902dcc242ae28798df
-*** Element info: {Using=xpath, value=//select[@name='sort']}
+Session ID: b79020a82bb8ff3545a844b8701da1db
+*** Element info: {Using=xpath, value=//span[text()='Flights']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -267,12 +269,8 @@ Session ID: 35cd2ebea9457e902dcc242ae28798df
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.getTagName(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.<init>(Select.java:44)
-	at venkat.journey.pages.FlightsSearchResultsPage.selectFilter(FlightsSearchResultsPage.java:69)
-	at venkat.journey.tests.FlightBookingOnewaySteps.testOnewayBookingSteps(FlightBookingOnewaySteps.java:30)
+	at venkat.journey.pages.FlightsHomePage.selectMenuCategory(FlightsHomePage.java:18)
+	at venkat.journey.tests.FlightBookingOnewaySteps.testOnewayBookingSteps(FlightBookingOnewaySteps.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -286,35 +284,34 @@ Session ID: 35cd2ebea9457e902dcc242ae28798df
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:744)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
+            <line>
+              <![CDATA[Failed TestCase is:testOnewayBookingSteps]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testOnewayBookingSteps -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@475530b9]" name="closeApplication" is-config="true" duration-ms="979" started-at="2018-02-09T22:52:01Z" finished-at="2018-02-09T22:52:02Z">
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@4c70fda8]" name="closeApplication" is-config="true" duration-ms="924" started-at="2018-02-10T11:35:42Z" finished-at="2018-02-10T11:35:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testOnewayBookingSteps status=FAILURE method=FlightBookingOnewaySteps.testOnewayBookingSteps()[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@475530b9] output={null}]]]>
+                <![CDATA[[TestResult name=testOnewayBookingSteps status=FAILURE method=FlightBookingOnewaySteps.testOnewayBookingSteps()[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@4c70fda8] output=Failed TestCase is:testOnewayBookingSteps]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@475530b9]" name="openApplication" is-config="true" duration-ms="32006" started-at="2018-02-09T22:52:02Z" finished-at="2018-02-09T22:52:34Z">
+        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@4c70fda8]" name="openApplication" is-config="true" duration-ms="17768" started-at="2018-02-10T11:35:43Z" finished-at="2018-02-10T11:36:01Z">
           <params>
             <param index="0">
               <value>
@@ -325,10 +322,10 @@ Session ID: 35cd2ebea9457e902dcc242ae28798df
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="FAIL" signature="testOnewayBookingSteps()[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@475530b9]" name="testOnewayBookingSteps" duration-ms="36595" started-at="2018-02-09T22:52:34Z" finished-at="2018-02-09T22:53:10Z">
+        <test-method status="FAIL" signature="testOnewayBookingSteps()[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@4c70fda8]" name="testOnewayBookingSteps" duration-ms="43139" started-at="2018-02-10T11:36:01Z" finished-at="2018-02-10T11:36:44Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='sort']"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Flights']"}
   (Session info: chrome=64.0.3282.140)
   (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -337,11 +334,11 @@ Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.35
 System info: host: 'VENKAT', ip: '192.168.0.24', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20-ea'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\lenovo\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}
-Session ID: ad0348b38b133578cda1b9fe99f56fda
-*** Element info: {Using=xpath, value=//select[@name='sort']}]]>
+Session ID: 4d5f5672f38dd74207d61d7a8bc2bcf6
+*** Element info: {Using=xpath, value=//span[text()='Flights']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='sort']"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Flights']"}
   (Session info: chrome=64.0.3282.140)
   (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -350,8 +347,8 @@ Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.35
 System info: host: 'VENKAT', ip: '192.168.0.24', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20-ea'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\lenovo\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}
-Session ID: ad0348b38b133578cda1b9fe99f56fda
-*** Element info: {Using=xpath, value=//select[@name='sort']}
+Session ID: 4d5f5672f38dd74207d61d7a8bc2bcf6
+*** Element info: {Using=xpath, value=//span[text()='Flights']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -368,12 +365,8 @@ Session ID: ad0348b38b133578cda1b9fe99f56fda
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.getTagName(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.<init>(Select.java:44)
-	at venkat.journey.pages.FlightsSearchResultsPage.selectFilter(FlightsSearchResultsPage.java:69)
-	at venkat.journey.tests.FlightBookingOnewaySteps.testOnewayBookingSteps(FlightBookingOnewaySteps.java:30)
+	at venkat.journey.pages.FlightsHomePage.selectMenuCategory(FlightsHomePage.java:18)
+	at venkat.journey.tests.FlightBookingOnewaySteps.testOnewayBookingSteps(FlightBookingOnewaySteps.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -387,35 +380,34 @@ Session ID: ad0348b38b133578cda1b9fe99f56fda
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:744)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
+            <line>
+              <![CDATA[Failed TestCase is:testOnewayBookingSteps]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testOnewayBookingSteps -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@475530b9]" name="closeApplication" is-config="true" duration-ms="871" started-at="2018-02-09T22:53:10Z" finished-at="2018-02-09T22:53:11Z">
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@4c70fda8]" name="closeApplication" is-config="true" duration-ms="806" started-at="2018-02-10T11:36:45Z" finished-at="2018-02-10T11:36:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testOnewayBookingSteps status=FAILURE method=FlightBookingOnewaySteps.testOnewayBookingSteps()[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@475530b9] output={null}]]]>
+                <![CDATA[[TestResult name=testOnewayBookingSteps status=FAILURE method=FlightBookingOnewaySteps.testOnewayBookingSteps()[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@4c70fda8] output=Failed TestCase is:testOnewayBookingSteps]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method status="PASS" signature="flush()[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@475530b9]" name="flush" is-config="true" duration-ms="1111" started-at="2018-02-09T22:53:12Z" finished-at="2018-02-09T22:53:13Z">
+        <test-method status="PASS" signature="flush()[pri:0, instance:venkat.journey.tests.FlightBookingOnewaySteps@4c70fda8]" name="flush" is-config="true" duration-ms="441" started-at="2018-02-10T11:36:45Z" finished-at="2018-02-10T11:36:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->

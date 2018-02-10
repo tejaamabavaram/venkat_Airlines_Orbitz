@@ -9,8 +9,8 @@ public interface InterfaceConstants {
 	String XLPATH		=	"./data/input.xlsx";
 	String IE_KEY		=	"webdriver.ie.driver";
 	String IE_VALUE		=	"./drivers/IEDriverServer.exe";
-	String SUCESS_PHOTOPATH ="./Sucess_Result_Images";
-	String FAILURE_PHOTOPATH= "./Failure_Result_Images";
+	String SUCESS_PHOTOPATH ="F:/project/venkat_Airlines_Orbitz/Sucess_Result_Images/";
+	String FAILURE_PHOTOPATH= "F:/project/venkat_Airlines_Orbitz/Failure_Result_Images/";
 	String REPORT_PATH="./Reports/report.html";
 	
 }

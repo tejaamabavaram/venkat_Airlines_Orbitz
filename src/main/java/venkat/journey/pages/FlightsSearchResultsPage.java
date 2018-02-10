@@ -57,7 +57,7 @@ public class FlightsSearchResultsPage extends BaseTest {
 	// verify Results page displays flights availability from given source and destination
 	public void verifyFlightsList()	{
 		int count=0;
-		for(int i=1;i<=flightsList.size();i++) {
+		for(int i=0;i<flightsList.size();i++) {
 			Reporter.log("Flights List:"+flightsList.get(i).getText(),true);
 			count++;
 		}
