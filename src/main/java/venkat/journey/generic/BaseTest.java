@@ -12,27 +12,33 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
 @Listeners(CustomListener.class)
 
 public class BaseTest implements InterfaceConstants {
 	public WebDriver driver;
-	public static ExtentReports report;
+	public ExtentTest test ;
+	public  ExtentReports report;
 	@BeforeSuite
 	public void createReport()
 	{
-		report = new ExtentReports();
+		report = new ExtentReports(null);
 		ExtentHtmlReporter htmlReport = new ExtentHtmlReporter(REPORT_PATH);
-		report.attachReporter(htmlReport);
+	/*	report.attachReporter(htmlReport);
+		report.setSystemInfo("Host Name", "venkat");
+		report.setSystemInfo("User name", "reddy");
+		report.setSystemInfo("Environment", "QA");*/
 	}
 	@AfterSuite
 	public void flush()
 	{
 		report.flush();
+		
 	}
 	static
 	{
@@ -60,8 +66,26 @@ public class BaseTest implements InterfaceConstants {
 	
 	@AfterMethod
 	public void closeApplication(ITestResult result) {
+		if(result.getStatus()==ITestResult.FAILURE)
+		{
+		test.log(LogStatus.FAIL, "TEst case failed is:"+result.getName());
+		
+		//test.log(LogStatus.FAIL, "TEst case failed is:"+result.getName()); //to aadd name in extent report
+		test.log(LogStatus.FAIL, "TEst case failed is:"+result.getThrowable());// add exception in extent
+		String screenPath = ExtentReportsWithScreenShot.getScreenShotPhoto(driver, result.getName());
+		test.log(LogStatus.FAIL, test.addScreenCapture(screenPath));//to add screen shot in extent reports 
+		test.log(LogStatus.FAIL, test.addScreenCapture(screenPath));
+		} else if(result.getStatus() == ITestResult.SKIP)
+		{
+			test.log(LogStatus.SKIP, "Skipped test is:"+result.getName());
+		}
+		else if(result.getStatus()==ITestResult.SUCCESS)
+		{
+			test.log(LogStatus.PASS, "Test case passed is:"+result.getName());
+		}
+		report.endTest(test);// end test and ends current test and prepare html report
 		driver.quit();
-		String testName = result.getName();
+		/*String testName = result.getName();
 		ExtentTest test = report.createTest(testName);
 		if(result.getStatus()==1)
 		{
@@ -69,7 +93,7 @@ public class BaseTest implements InterfaceConstants {
 		}
 		else {
 			test.fail("Test Fail");
-		}
+		}*/
 	}
 
 }
