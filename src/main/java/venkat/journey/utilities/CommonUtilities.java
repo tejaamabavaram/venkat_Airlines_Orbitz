@@ -22,7 +22,7 @@ public class CommonUtilities {
 		TakesScreenshot ts =(TakesScreenshot)driver;
 		File sfile =  ts.getScreenshotAs(OutputType.FILE);
 		File dfile = new File("D:\results"+now+"+.png");
-		//FileUtils.copyFile
+		//FileUtils.copyFile Venkat
 		
 	}
 	
